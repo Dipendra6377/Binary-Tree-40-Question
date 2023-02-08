@@ -1,10 +1,10 @@
-<img src="https://lh3.googleusercontent.com/_cAzrnqpfqycZ8os8nqq0SD-YGbtIuUSxWMgw-bI0uLM-Tffjtca8hFnHLjG0cN5hMVJwWo7CZGdH8XGc5IgZx-e8P_ThA0BphuC08fbaolhsyOCGc00VxOE-Hu-5LgOTb_Fxic1" alt="tree" width="300" height="300">
+<img src="https://lh3.googleusercontent.com/_cAzrnqpfqycZ8os8nqq0SD-YGbtIuUSxWMgw-bI0uLM-Tffjtca8hFnHLjG0cN5hMVJwWo7CZGdH8XGc5IgZx-e8P_ThA0BphuC08fbaolhsyOCGc00VxOE-Hu-5LgOTb_Fxic1" alt="tree" width="600" height="300">
 
-<<img src="https://lh6.googleusercontent.com/lKSl_VwDV3YG21t5wSeSGpqstch64pxUEmRVtqk7AblDuIaNymTwUWuSwjMyUHCHNaEpUmTrzpyrLFGi1XfI2l4LcikOmOVQ_YM6r4STZNw5nSkWv9RwfMi8zqWIzkdGHobdFF8G" alt="Map" width="200" height="300">>
+<<img src="https://lh6.googleusercontent.com/lKSl_VwDV3YG21t5wSeSGpqstch64pxUEmRVtqk7AblDuIaNymTwUWuSwjMyUHCHNaEpUmTrzpyrLFGi1XfI2l4LcikOmOVQ_YM6r4STZNw5nSkWv9RwfMi8zqWIzkdGHobdFF8G" alt="Map" width="600" height="300">>
 
 <p1> In the vertical order traversal, we need to print the nodes of the left vertical first, therefore in our example, nodes of -2 vertical will be the first to  be printed. Therefore, we need a data structure that can store nodes according to their vertical value and give us the nodes of least values first. Hence we will use a map as it satisfies both criterias.</p1>
 
-<h1> <strong>1st </strong> we have to make <code> map<Vertical,X> </code> so that we can store vertical index there in Treemap</h1>
+<h2> <strong>1st </strong> we have to make <code> map<Vertical,X> </code> so that we can store vertical index there in Treemap</h2>
   <p1><code> Why Tree Map???</code> bcoz unlike HashMap ,treemap store in incresing order index like -1,-2,0,1,2 and give you in order wise order </p1>
   
   <pre>
@@ -71,3 +71,7 @@ map.get(x).get(y).offer(node.data);
 } 
 </pre>
 
+<pre>
+{vertical index ={level = [Node value ]}}
+{tree Map { verticalIndex, TreeMap (level , Priority Queue })}
+</pre>
